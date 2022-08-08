@@ -1,21 +1,21 @@
 primeNum = []
 
-number=int(input("Enter Number: "))
-def isPrime(w):
+number=int(input("enter a value: "))
+def isPrime(d):
     i = 2
-    while (i < w):
-        if w % i == 0:
+    while (i < d):
+        if d % i == 0:
             return False
         i = i + 1
     return True
 
 
 def printNum(l):
-    a= 2
-    while a <= l:
-        if isPrime(a):
-            primeNum.append(a)
-        a= a + 1
+    m = 2
+    while m <= l:
+        if isPrime(m):
+            primeNum.append(m)
+        m= m + 1
 
 
 printNum(number)
@@ -23,10 +23,10 @@ printNum(number)
 numOfPrime = len(primeNum)
 sum = 0
 
-g = 0
-while g< numOfPrime:
-    sum += primeNum[g]
-    g = g + 1
+b = 0
+while b< numOfPrime:
+    sum += primeNum[b]
+    b = b + 1
 
 ans = sum / numOfPrime
 
